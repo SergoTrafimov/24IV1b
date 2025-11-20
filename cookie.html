@@ -8,11 +8,11 @@
     <h1>Cookie установлен</h1>
 
     <script>
-        // Установка cookie с правильными параметрами
         const expires = new Date();
-        expires.setDate(expires.getDate() + 1); // +1 день
+        expires.setDate(expires.getDate() + 1);
 
         document.cookie = "student=Trafimov; expires=" + expires.toUTCString() + "; path=/";
     </script>
 </body>
+
 </html>
