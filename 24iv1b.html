@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Установка Cookie</title>
+</head>
+<body>
+    <h1>Cookie установлен</h1>
+
+    <script>
+        // Установка cookie с правильными параметрами
+        const expires = new Date();
+        expires.setDate(expires.getDate() + 1); // +1 день
+
+        document.cookie = "student=Trafimov; expires=" + expires.toUTCString() + "; path=/";
+    </script>
+</body>
+</html>
